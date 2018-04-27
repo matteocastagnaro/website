@@ -27,7 +27,7 @@
 
     <script type="text/javascript">
 
-      var http = require("http");
+      var http = new XMLHttpRequest();
 
       var date = new Date();
       var anni = date.getFullYear() - 1992
@@ -36,11 +36,13 @@
     		anni -= 1;
 
       setInterval(function() {
-          http.get("http://website-matteocastagnaro.herokuapp.com");
+        http.open( "GET", "http://website-matteocastagnaro.herokuapp.com", false ); // false for synchronous request
+        http.send( null );
       }, 900000); // every 15 minutes (300000)
 
       setInterval(function() {
-          http.get("http://dev-website-matteocastagnaro.herokuapp.com");
+        http.open( "GET", "http://dev-website-matteocastagnaro.herokuapp.com", false ); // false for synchronous request
+        http.send( null );
       }, 900000); // every 15 minutes (300000)
 
     </script>
