@@ -39,6 +39,10 @@
           http.get("http://website-matteocastagnaro.herokuapp.com");
       }, 900000); // every 15 minutes (300000)
 
+      setInterval(function() {
+          http.get("http://dev-website-matteocastagnaro.herokuapp.com");
+      }, 900000); // every 15 minutes (300000)
+
     </script>
 
 </head>
