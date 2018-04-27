@@ -27,14 +27,17 @@
 
     <script type="text/javascript">
 
-      var date = new Date();
+      var http = require("http");
 
+      var date = new Date();
       var anni = date.getFullYear() - 1992
 
-    	if(12 > date.getMonth())
+    	if (12 > date.getMonth() || (12 == date.getMonth() && 3 > date.getDay()))
     		anni -= 1;
-    	else if(12 == date.getMonth() && 3 > date.getDay())
-    		anni -= 1;
+
+      setInterval(function() {
+          http.get("http://website-matteocastagnaro.herokuapp.com");
+      }, 900000); // every 15 minutes (300000)
 
     </script>
 
