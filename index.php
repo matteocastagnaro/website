@@ -339,7 +339,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright © <a href="https://matteocastagnaro.makarenalabs.com">matteocastagnaro.it</a> <script>document.write(year);</script></span>
+                    <span class="copyright">Copyright © <a href="https://matteocastagnaro.it">matteocastagnaro.it</a> <script>document.write(date.getFullYear());</script></span>
                 </div>
 
                 <div align="right">
