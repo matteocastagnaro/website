@@ -35,16 +35,6 @@
     	if (12 > date.getMonth() || (12 == date.getMonth() && 3 > date.getDay()))
     		anni -= 1;
 
-      setInterval(function() {
-        http.open( "GET", "http://website-matteocastagnaro.herokuapp.com", false ); // false for synchronous request
-        http.send( null );
-      }, 900000); // every 15 minutes (300000)
-
-      setInterval(function() {
-        http.open( "GET", "http://dev-website-matteocastagnaro.herokuapp.com", false ); // false for synchronous request
-        http.send( null );
-      }, 900000); // every 15 minutes (300000)
-
     </script>
 
 </head>
@@ -299,7 +289,7 @@
                         <div class="call-to-action">
                             <i class="fa fa-4x fa-fw fa-github wowo rubberBand"></i>
                             <h2>Segui i miei sviluppi sul repository pubblico di GitHub!</h2>
-                            <a href="http://www.github.com/matteocastagnaro" class="btn btn-default btn-xl wow rubberBand" target="_blank">GitHub <i class="fa fa-github"></i></a>
+                            <a href="https://www.github.com/matteocastagnaro" class="btn btn-default btn-xl wow rubberBand" target="_blank">GitHub <i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
