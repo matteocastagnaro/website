@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -27,13 +27,12 @@
 
     <script type="text/javascript">
 
-      var date = new Date();
+      var http = new XMLHttpRequest();
 
+      var date = new Date();
       var anni = date.getFullYear() - 1992
 
-    	if(12 > date.getMonth())
-    		anni -= 1;
-    	else if(12 == date.getMonth() && 3 > date.getDay())
+    	if (12 > date.getMonth() || (12 == date.getMonth() && 3 > date.getDay()))
     		anni -= 1;
 
     </script>
@@ -290,7 +289,7 @@
                         <div class="call-to-action">
                             <i class="fa fa-4x fa-fw fa-github wowo rubberBand"></i>
                             <h2>Segui i miei sviluppi sul repository pubblico di GitHub!</h2>
-                            <a href="http://www.github.com/matteocastagnaro" class="btn btn-default btn-xl wow rubberBand" target="_blank">GitHub <i class="fa fa-github"></i></a>
+                            <a href="https://www.github.com/matteocastagnaro" class="btn btn-default btn-xl wow rubberBand" target="_blank">GitHub <i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +331,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright © <a href="https://matteocastagnaro.makarenalabs.com">matteocastagnaro.it</a> <script>document.write(year);</script></span>
+                    <span class="copyright">Copyright © <a href="https://matteocastagnaro.it">matteocastagnaro.it</a> <script>document.write(date.getFullYear());</script></span>
                 </div>
 
                 <div align="right">
