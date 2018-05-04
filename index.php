@@ -234,6 +234,7 @@
                     <p class="text-giustificate">Sei sempre alla ricerca del tesserino del tuo codice fiscale? Non sai come fare a reperire il tuo CF senza andare su internet? Ecco la soluzione! Un leggerissimo tool (open source) che ti permette di calcolare il tuo codice fiscale anche senza connessione ad internet! Scarica subito il tool!
                     </p>
                     <a href="https://github.com/matteocastagnaro/codice-fiscale-java/blob/master/jar/codice-fiscale.jar?raw=true" class="btn btn-primary btn-xl wow rubberBand">Scarica il tool <i class="fa fa-download"></i></a>
+		    <a href="https://cf.matteocastagnaro.it" target="_blank" class="btn btn-primary btn-xl wow rubberBand">Calcolalo subito online! <i class="fa fa-check"></i></a>
                 </div>
 
                 <div style="margin-top: 50px; float: left; width: 100%;"></div>
